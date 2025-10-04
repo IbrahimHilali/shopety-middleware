@@ -1,12 +1,17 @@
-import {Module} from '@nestjs/common';
-import {PaymentModule} from './payment/payment.module';
-import {ZainCashModule} from "./zaincash/zaincash.module";
-import {AuthModule} from './auth/auth.module';
-import {PrismaModule} from "./prisma/prisma.module";
-
+import { Module } from '@nestjs/common';
+import { PaymentModule } from './payment/payment.module';
+import { ZainCashModule } from './zaincash/zaincash.module';
+import { AuthModule } from './auth/auth.module';
+import { PrismaModule } from './prisma/prisma.module';
+import { UserModule } from './user/user.module';
 
 @Module({
-    imports: [PaymentModule, ZainCashModule, AuthModule, PrismaModule]
+  imports: [
+    PaymentModule,
+    ZainCashModule,
+    AuthModule,
+    PrismaModule,
+    UserModule,
+  ],
 })
-export class AppModule {
-}
+export class AppModule {}

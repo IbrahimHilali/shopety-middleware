@@ -1,8 +1,7 @@
-import {Module} from '@nestjs/common';
-import {PaypalController} from './paypal.controller';
+import { Module } from '@nestjs/common';
+import { PaypalController } from './paypal.controller';
 
 @Module({
-    controllers: [PaypalController]
+  controllers: [PaypalController],
 })
-export class PaypalModule {
-}
+export class PaypalModule {}

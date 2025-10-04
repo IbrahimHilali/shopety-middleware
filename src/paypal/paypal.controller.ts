@@ -1,6 +1,4 @@
-import {Controller} from '@nestjs/common';
+import { Controller } from '@nestjs/common';
 
 @Controller('paypal')
-export class PaypalController {
-
-}
+export class PaypalController {}
