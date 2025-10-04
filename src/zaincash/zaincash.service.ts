@@ -1,5 +1,10 @@
 // zaincash.service.ts
-import { BadRequestException, HttpException, Injectable, NotFoundException, } from '@nestjs/common';
+import {
+  BadRequestException,
+  HttpException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { JwtService } from '@nestjs/jwt';
 import { firstValueFrom } from 'rxjs';
